@@ -2,7 +2,7 @@
 	"homepage": "https://coolacpc.github.io/cookstove-v2/",
 	"name": "cookstove",
 	"version": "0.1.0",
-	"private": false,
+	"private": true,
 	"dependencies": {
 		"@heroicons/react": "v1",
 		"@styled-icons/heroicons-outline": "^10.47.0",
@@ -21,10 +21,10 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"predeploy": "yarn run build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
+		"predeploy": "yarn run build",
 		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
