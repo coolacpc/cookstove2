@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cookstove-v2/static/css/main.b0f2852a.css",
-    "main.js": "/cookstove-v2/static/js/main.11193949.js",
+    "main.css": "/cookstove-v2/static/css/main.fc98c5b3.css",
+    "main.js": "/cookstove-v2/static/js/main.56acb61a.js",
     "static/media/Box3.jpg": "/cookstove-v2/static/media/Box3.a230253771d4becc5ea5.jpg",
     "static/media/Box12.jpg": "/cookstove-v2/static/media/Box12.fbcf6caf733f20e422a5.jpg",
     "static/media/Box11.jpg": "/cookstove-v2/static/media/Box11.86fed123ec4c83c55fcc.jpg",
@@ -11,11 +11,11 @@
     "static/media/double.png": "/cookstove-v2/static/media/double.8be045e6bb88be63d414.png",
     "static/media/triple.png": "/cookstove-v2/static/media/triple.4eb8f19f4b4647321484.png",
     "index.html": "/cookstove-v2/index.html",
-    "main.b0f2852a.css.map": "/cookstove-v2/static/css/main.b0f2852a.css.map",
-    "main.11193949.js.map": "/cookstove-v2/static/js/main.11193949.js.map"
+    "main.fc98c5b3.css.map": "/cookstove-v2/static/css/main.fc98c5b3.css.map",
+    "main.56acb61a.js.map": "/cookstove-v2/static/js/main.56acb61a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0f2852a.css",
-    "static/js/main.11193949.js"
+    "static/css/main.fc98c5b3.css",
+    "static/js/main.56acb61a.js"
   ]
 }
