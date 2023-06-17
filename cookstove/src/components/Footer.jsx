@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
 	return (
-		<div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
+		<div className="w-full py-32 px-64 grid lg:grid-cols-3 gap-8 text-white bg-[#5296A9] w-full">
 			<div>
 				<h1 className="w-full text-3xl font-bold text-[#00df9a]">
 					CookStove.
@@ -29,7 +29,7 @@ const Footer = () => {
 			</div>
 			<div className="lg:col-span-2 flex justify-between mt-6">
 				<div>
-					<h6 className="font-medium text-gray-400">Solutions</h6>
+					<h6 className="font-medium text-white">Solutions</h6>
 					<ul>
 						<li className="py-2 text-sm">Analytics</li>
 						<li className="py-2 text-sm">Marketing</li>

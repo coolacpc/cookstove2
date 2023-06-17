@@ -22,7 +22,7 @@ const Cards = () => {
 						<p className="py-2 border-b mx-8">Details</p>
 						<p className="py-2 border-b mx-8">Details</p>
 					</div>
-					<button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
+					<button className="bg-[#05588C] text-white w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
 						Add to Cart
 					</button>
 				</div>
@@ -41,7 +41,7 @@ const Cards = () => {
 						<p className="py-2 border-b mx-8">Details</p>
 						<p className="py-2 border-b mx-8">Details</p>
 					</div>
-					<button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
+					<button className="bg-[#05588C] text-white w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
 						Add to Cart
 					</button>
 				</div>
@@ -60,7 +60,7 @@ const Cards = () => {
 						<p className="py-2 border-b mx-8">Details</p>
 						<p className="py-2 border-b mx-8">Details</p>
 					</div>
-					<button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
+					<button className="bg-[#05588C] text-white w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
 						Get in touch
 					</button>
 				</div>

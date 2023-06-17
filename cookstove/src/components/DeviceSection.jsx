@@ -5,7 +5,7 @@ import Typed from "react-typed";
 
 const DeviceSection = () => {
 	return (
-		<div name="platforms" className="w-full my-32 text-white">
+		<div className="bg-[#5296A9] w-full py-32 text-white">
 			<div className="max-w-[1240px] mx-auto px-2">
 				<h2 className="text-7xl font-bold text-center py-3">
 					Why Choose
