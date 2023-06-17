@@ -7,12 +7,7 @@ function App() {
 	return (
 		<div>
 			<BrowserRouter>
-				<div
-					className="wrapper"
-					style={{
-						minHeight: "calc(100vh - 288px)",
-					}}
-				>
+				<div>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/clients" element={<Clients />} />
