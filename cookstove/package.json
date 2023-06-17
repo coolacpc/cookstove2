@@ -1,6 +1,6 @@
 {
 	"homepage": "https://coolacpc.github.io/cookstovev2",
-	"name": "cookstove",
+	"name": "cookstovev2",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
