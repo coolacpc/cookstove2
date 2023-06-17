@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cookstove-v2/static/css/main.fc98c5b3.css",
-    "main.js": "/cookstove-v2/static/js/main.02db23c7.js",
-    "static/media/Box3.jpg": "/cookstove-v2/static/media/Box3.a230253771d4becc5ea5.jpg",
-    "static/media/Box12.jpg": "/cookstove-v2/static/media/Box12.fbcf6caf733f20e422a5.jpg",
-    "static/media/Box11.jpg": "/cookstove-v2/static/media/Box11.86fed123ec4c83c55fcc.jpg",
-    "static/media/Box30.jpg": "/cookstove-v2/static/media/Box30.1296c94d014307333634.jpg",
-    "static/media/laptop.jpg": "/cookstove-v2/static/media/laptop.45ddf500e572fb2f1d35.jpg",
-    "static/media/single.png": "/cookstove-v2/static/media/single.20196aa3e7e7fa48f8f7.png",
-    "static/media/double.png": "/cookstove-v2/static/media/double.8be045e6bb88be63d414.png",
-    "static/media/triple.png": "/cookstove-v2/static/media/triple.4eb8f19f4b4647321484.png",
-    "index.html": "/cookstove-v2/index.html",
-    "main.fc98c5b3.css.map": "/cookstove-v2/static/css/main.fc98c5b3.css.map",
-    "main.02db23c7.js.map": "/cookstove-v2/static/js/main.02db23c7.js.map"
+    "main.css": "/cookstovev2/static/css/main.fc98c5b3.css",
+    "main.js": "/cookstovev2/static/js/main.74704bb6.js",
+    "static/media/Box3.jpg": "/cookstovev2/static/media/Box3.a230253771d4becc5ea5.jpg",
+    "static/media/Box12.jpg": "/cookstovev2/static/media/Box12.fbcf6caf733f20e422a5.jpg",
+    "static/media/Box11.jpg": "/cookstovev2/static/media/Box11.86fed123ec4c83c55fcc.jpg",
+    "static/media/Box30.jpg": "/cookstovev2/static/media/Box30.1296c94d014307333634.jpg",
+    "static/media/laptop.jpg": "/cookstovev2/static/media/laptop.45ddf500e572fb2f1d35.jpg",
+    "static/media/single.png": "/cookstovev2/static/media/single.20196aa3e7e7fa48f8f7.png",
+    "static/media/double.png": "/cookstovev2/static/media/double.8be045e6bb88be63d414.png",
+    "static/media/triple.png": "/cookstovev2/static/media/triple.4eb8f19f4b4647321484.png",
+    "index.html": "/cookstovev2/index.html",
+    "main.fc98c5b3.css.map": "/cookstovev2/static/css/main.fc98c5b3.css.map",
+    "main.74704bb6.js.map": "/cookstovev2/static/js/main.74704bb6.js.map"
   },
   "entrypoints": [
     "static/css/main.fc98c5b3.css",
-    "static/js/main.02db23c7.js"
+    "static/js/main.74704bb6.js"
   ]
 }
