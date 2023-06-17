@@ -6,7 +6,7 @@ import Typed from "react-typed";
 const DeviceSection = () => {
 	return (
 		<div className="bg-[#5296A9] w-full py-32 text-white">
-			<div className="max-w-[1240px] mx-auto px-2">
+			<div className="max-w-[1400px] mt-[-180px] h-screen mx-auto text-center flex flex-col justify-center">
 				<h2 className="text-7xl font-bold text-center py-3">
 					Why Choose
 					<Typed
@@ -25,10 +25,10 @@ const DeviceSection = () => {
 
 				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
 					<div className="flex">
-						<div className="text-lg pt-2 pb-4 bg-gray-800">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<CheckIcon className="w-7 mr-4 text-green-600" />
 						</div>
-						<div className="text-lg pt-2 pb-4 bg-gray-800 rounded">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<h3 className="font-bold text-lg">Reason 1</h3>
 							<p>
 								{" "}
@@ -40,10 +40,10 @@ const DeviceSection = () => {
 						</div>
 					</div>
 					<div className="flex">
-						<div className="text-lg pt-2 pb-4 bg-gray-800">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<CheckIcon className="w-7 mr-4 text-green-600" />
 						</div>
-						<div className="text-lg pt-2 pb-4 bg-gray-800 rounded">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<h3 className="font-bold text-lg">Reason 2</h3>
 							<p>
 								{" "}
@@ -55,10 +55,10 @@ const DeviceSection = () => {
 						</div>
 					</div>
 					<div className="flex">
-						<div className="text-lg pt-2 pb-4 bg-gray-800">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<CheckIcon className="w-7 mr-4 text-green-600" />
 						</div>
-						<div className="text-lg pt-2 pb-4 bg-gray-800 rounded">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<h3 className="font-bold text-lg">Reason 3</h3>
 							<p>
 								{" "}
@@ -70,10 +70,10 @@ const DeviceSection = () => {
 						</div>
 					</div>
 					<div className="flex">
-						<div className="text-lg pt-2 pb-4 bg-gray-800">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<CheckIcon className="w-7 mr-4 text-green-600" />
 						</div>
-						<div className="text-lg pt-2 pb-4 bg-gray-800 rounded">
+						<div className="text-lg pt-2 pb-4 bg-[#05588C]">
 							<h3 className="font-bold text-lg">Reason 4</h3>
 							<p>
 								{" "}
