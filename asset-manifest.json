@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cookstovev2/static/css/main.fc98c5b3.css",
-    "main.js": "/cookstovev2/static/js/main.74704bb6.js",
+    "main.js": "/cookstovev2/static/js/main.71bb55f9.js",
     "static/media/Box3.jpg": "/cookstovev2/static/media/Box3.a230253771d4becc5ea5.jpg",
     "static/media/Box12.jpg": "/cookstovev2/static/media/Box12.fbcf6caf733f20e422a5.jpg",
     "static/media/Box11.jpg": "/cookstovev2/static/media/Box11.86fed123ec4c83c55fcc.jpg",
@@ -12,10 +12,10 @@
     "static/media/triple.png": "/cookstovev2/static/media/triple.4eb8f19f4b4647321484.png",
     "index.html": "/cookstovev2/index.html",
     "main.fc98c5b3.css.map": "/cookstovev2/static/css/main.fc98c5b3.css.map",
-    "main.74704bb6.js.map": "/cookstovev2/static/js/main.74704bb6.js.map"
+    "main.71bb55f9.js.map": "/cookstovev2/static/js/main.71bb55f9.js.map"
   },
   "entrypoints": [
     "static/css/main.fc98c5b3.css",
-    "static/js/main.74704bb6.js"
+    "static/js/main.71bb55f9.js"
   ]
 }
