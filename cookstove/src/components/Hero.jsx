@@ -109,10 +109,13 @@ export default function Hero() {
 							Worlds Best Stove Manager.
 						</h1>
 						<p className="mt-6 text-lg leading-8 text-gray-600">
-							Oh boy, do I have a treat for you! Prepare yourself
-							for the mind-blowing, life-altering experience of
-							managing your stoves and grills. Get ready to dive
-							headfirst into the wild world of stove management!
+							SDW - Stove Data Works, where we bring you an
+							exceptional solution for stove and grill management.
+							Prepare to embark on a transformative journey that
+							will revolutionize the way you handle your cooking
+							appliances. Our cutting-edge technology and
+							intuitive tools will empower you to take full
+							control of your stoves with ease and efficiency.
 						</p>
 						<div className="mt-10 flex items-center justify-center gap-x-6">
 							<a
