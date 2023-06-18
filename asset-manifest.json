@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/cookstove2/static/css/main.8a700d07.css",
-    "main.js": "/cookstove2/static/js/main.c6a73f42.js",
+    "main.js": "/cookstove2/static/js/main.5ea81058.js",
     "static/media/Box1.jpg": "/cookstove2/static/media/Box1.4957cf57cc561ad7141e.jpg",
     "static/media/Box2.jpg": "/cookstove2/static/media/Box2.0deaf0f9612e0e44143d.jpg",
     "static/media/Box3.jpg": "/cookstove2/static/media/Box3.a230253771d4becc5ea5.jpg",
     "index.html": "/cookstove2/index.html",
     "main.8a700d07.css.map": "/cookstove2/static/css/main.8a700d07.css.map",
-    "main.c6a73f42.js.map": "/cookstove2/static/js/main.c6a73f42.js.map"
+    "main.5ea81058.js.map": "/cookstove2/static/js/main.5ea81058.js.map"
   },
   "entrypoints": [
     "static/css/main.8a700d07.css",
-    "static/js/main.c6a73f42.js"
+    "static/js/main.5ea81058.js"
   ]
 }
