@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cookstovev2/static/css/main.57d4f4f0.css",
-    "main.js": "/cookstovev2/static/js/main.1009defd.js",
-    "static/media/Box3.jpg": "/cookstovev2/static/media/Box3.a230253771d4becc5ea5.jpg",
-    "static/media/Box12.jpg": "/cookstovev2/static/media/Box12.fbcf6caf733f20e422a5.jpg",
-    "static/media/Box11.jpg": "/cookstovev2/static/media/Box11.86fed123ec4c83c55fcc.jpg",
-    "static/media/Box30.jpg": "/cookstovev2/static/media/Box30.1296c94d014307333634.jpg",
-    "index.html": "/cookstovev2/index.html",
-    "main.57d4f4f0.css.map": "/cookstovev2/static/css/main.57d4f4f0.css.map",
-    "main.1009defd.js.map": "/cookstovev2/static/js/main.1009defd.js.map"
+    "main.css": "/cookstove2/static/css/main.57d4f4f0.css",
+    "main.js": "/cookstove2/static/js/main.93050df0.js",
+    "static/media/Box3.jpg": "/cookstove2/static/media/Box3.a230253771d4becc5ea5.jpg",
+    "static/media/Box12.jpg": "/cookstove2/static/media/Box12.fbcf6caf733f20e422a5.jpg",
+    "static/media/Box11.jpg": "/cookstove2/static/media/Box11.86fed123ec4c83c55fcc.jpg",
+    "static/media/Box30.jpg": "/cookstove2/static/media/Box30.1296c94d014307333634.jpg",
+    "index.html": "/cookstove2/index.html",
+    "main.57d4f4f0.css.map": "/cookstove2/static/css/main.57d4f4f0.css.map",
+    "main.93050df0.js.map": "/cookstove2/static/js/main.93050df0.js.map"
   },
   "entrypoints": [
     "static/css/main.57d4f4f0.css",
-    "static/js/main.1009defd.js"
+    "static/js/main.93050df0.js"
   ]
 }
