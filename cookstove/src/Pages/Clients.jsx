@@ -1,15 +1,13 @@
 import React from "react";
+import Hero from "../components/Hero";
 import Footer from "../components/Footer";
-import DeviceSection from "../components/DeviceSection";
-import Clientphotos from "../components/Clientphotos";
-import Order from "../components/Order";
+import Carouselimg from "../components/Carousel";
 
 function Clients() {
 	return (
 		<div>
-			<DeviceSection />
-			<Clientphotos />
-			<Order />
+			<Hero />
+			<Carouselimg />
 			<Footer />
 		</div>
 	);
