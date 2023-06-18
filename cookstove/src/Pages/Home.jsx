@@ -1,19 +1,15 @@
 import React from "react";
-import Analytics from "../components/Analytics";
-import Cards from "../components/Cards";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
+import HomePricing from "../components/HomePricing";
+import Feature from "../components/Feature";
+import Footer from "../components/Footer";
 
 function Home() {
 	return (
 		<div>
-			<Navbar />
 			<Hero />
-			<Analytics />
-			<Newsletter />
-			<Cards />
+			<Feature />
+			<HomePricing />
 			<Footer />
 		</div>
 	);

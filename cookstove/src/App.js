@@ -6,7 +6,7 @@ import Clients from "./Pages/Clients";
 function App() {
 	return (
 		<div>
-			<BrowserRouter basename="/cookstovev2">
+			<BrowserRouter basename="/cookstove2">
 				<div>
 					<Routes>
 						<Route path="/" element={<Home />} />
