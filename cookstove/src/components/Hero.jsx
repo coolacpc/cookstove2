@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
 	{ name: "Home", href: "/cookstove2" },
-	{ name: "Clients", href: "/cookstove2/Clients" },
+	{ name: "Clients", href: "/cookstove2/clients" },
 ];
 
 export default function Hero() {
