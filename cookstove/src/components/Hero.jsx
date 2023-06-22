@@ -106,16 +106,19 @@ export default function Hero() {
 				<div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 					<div className="text-center">
 						<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-							Worlds Best Stove Manager.
+							Stove usage data and insights.
 						</h1>
 						<p className="mt-6 text-lg leading-8 text-gray-600">
-							SDW - Stove Data Works, where we bring you an
-							exceptional solution for stove and grill management.
-							Prepare to embark on a transformative journey that
-							will revolutionize the way you handle your cooking
-							appliances. Our cutting-edge technology and
-							intuitive tools will empower you to take full
-							control of your stoves with ease and efficiency.
+							Stove Data Works (SDW) is a cutting-edge Internet of
+							Things (IoT)-based solution designed to
+							revolutionize stove monitoring. Our comprehensive
+							solution consists of a state-of-the-art hardware
+							component integrated with a user-friendly web-based
+							platform. By collecting and visualizing precise data
+							on stove usage and cooking patterns, SDW empowers
+							businesses to make informed decisions, optimize
+							investments, and shape policy direction with
+							unparalleled precision.
 						</p>
 						<div className="mt-10 flex items-center justify-center gap-x-6">
 							<a
