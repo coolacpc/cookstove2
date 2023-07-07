@@ -1,8 +1,8 @@
 import Box11 from "../assets/Box11.jpg";
 import {
-	CloudArrowUpIcon,
-	LockClosedIcon,
-	ServerIcon,
+	CheckBadgeIcon,
+	CpuChipIcon,
+	StarIcon,
 } from "@heroicons/react/20/solid";
 import { Element } from "react-scroll";
 
@@ -99,7 +99,7 @@ export default function Devicedetails() {
 									className="mt-8 space-y-8 text-gray-600"
 								>
 									<li className="flex gap-x-3">
-										<CloudArrowUpIcon
+										<CheckBadgeIcon
 											className="mt-1 h-5 w-5 flex-none text-indigo-600"
 											aria-hidden="true"
 										/>
@@ -114,7 +114,7 @@ export default function Devicedetails() {
 										</span>
 									</li>
 									<li className="flex gap-x-3">
-										<LockClosedIcon
+										<CpuChipIcon
 											className="mt-1 h-5 w-5 flex-none text-indigo-600"
 											aria-hidden="true"
 										/>
@@ -133,7 +133,7 @@ export default function Devicedetails() {
 										</span>
 									</li>
 									<li className="flex gap-x-3">
-										<ServerIcon
+										<StarIcon
 											className="mt-1 h-5 w-5 flex-none text-indigo-600"
 											aria-hidden="true"
 										/>

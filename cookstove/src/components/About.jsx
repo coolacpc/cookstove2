@@ -1,5 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
+import iot from "../assets/iot.jpg";
 
 function About() {
 	return (
@@ -10,11 +11,11 @@ function About() {
 						<div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
 							<div class="relative lg:max-w-md">
 								<img
-									src="https://i.postimg.cc/rF0MKfBV/pexels-andrea-piacquadio-3760263.jpg"
+									src={iot}
 									alt="aboutimage"
 									class="relative z-10 object-cover w-full rounded h-96"
 								/>
-								<div class="absolute bottom-0 right-0 z-10 p-8 bg-white border-4 border-blue-500 rounded shadow dark:border-blue-400 lg:-mb-8 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
+								{/* <div class="absolute bottom-0 right-0 z-10 p-8 bg-white border-4 border-blue-500 rounded shadow dark:border-blue-400 lg:-mb-8 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
 									<p class="text-lg font-semibold md:w-72">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -27,14 +28,14 @@ function About() {
 										Successfully Providing business
 										solutions from 25 years
 									</p>
-								</div>
+								</div> */}
 							</div>
 						</div>
 						<div class="w-full px-6 mb-10 lg:w-1/2 lg:mb-0 ">
 							<div class="pl-4 mb-6 border-l-4 border-blue-500 ">
-								<span class="text-sm text-black uppercase dark:text-black">
+								{/* <span class="text-sm text-black uppercase dark:text-black">
 									Who we are?
-								</span>
+								</span> */}
 								<h1 class="mt-2 text-3xl font-black text-black md:text-5xl dark:text-black">
 									About Us
 								</h1>

@@ -44,6 +44,7 @@ export default function Hero() {
 							</a>
 						))} */}
 						<Link
+							className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
 							to="Devicedetails"
 							spy={true}
 							smooth={true}
@@ -53,6 +54,7 @@ export default function Hero() {
 							Features
 						</Link>
 						<Link
+							className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
 							to="Aboutus"
 							spy={true}
 							smooth={true}
@@ -62,6 +64,7 @@ export default function Hero() {
 							About us
 						</Link>{" "}
 						<Link
+							className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
 							to="Pricing"
 							spy={true}
 							smooth={true}
@@ -132,7 +135,7 @@ export default function Hero() {
 						}}
 					/>
 				</div>
-				<div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+				<div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
 					<div className="text-center">
 						<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
 							Stove usage data and insights.
