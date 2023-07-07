@@ -2,11 +2,13 @@ import Logo from "../assets/Logo.jpg";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import * as Scroll from "react-scroll";
+import { Link, Element } from "react-scroll";
 
-const navigation = [
-	{ name: "Home", href: "/cookstove2" },
-	{ name: "Clients", href: "/cookstove2/clients" },
-];
+// const navigation = [
+// 	{ name: "Home", href: "/cookstove2" },
+// 	{ name: "Clients", href: "/cookstove2/clients" },
+// ];
 
 export default function Hero() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,7 +34,7 @@ export default function Hero() {
 						</button>
 					</div>
 					<div className="hidden lg:flex lg:gap-x-12">
-						{navigation.map((item) => (
+						{/* {navigation.map((item) => (
 							<a
 								key={item.name}
 								href={item.href}
@@ -40,7 +42,34 @@ export default function Hero() {
 							>
 								{item.name}
 							</a>
-						))}
+						))} */}
+						<Link
+							to="Devicedetails"
+							spy={true}
+							smooth={true}
+							offset={10}
+							duration={500}
+						>
+							Features
+						</Link>
+						<Link
+							to="Aboutus"
+							spy={true}
+							smooth={true}
+							offset={10}
+							duration={500}
+						>
+							About us
+						</Link>{" "}
+						<Link
+							to="Pricing"
+							spy={true}
+							smooth={true}
+							offset={10}
+							duration={500}
+						>
+							Products
+						</Link>
 					</div>
 				</nav>
 
@@ -74,7 +103,7 @@ export default function Hero() {
 						<div className="mt-6 flow-root">
 							<div className="-my-6 divide-y divide-gray-500/10">
 								<div className="space-y-2 py-6">
-									{navigation.map((item) => (
+									{/* {navigation.map((item) => (
 										<a
 											key={item.name}
 											href={item.href}
@@ -82,7 +111,7 @@ export default function Hero() {
 										>
 											{item.name}
 										</a>
-									))}
+									))} */}
 								</div>
 							</div>
 						</div>

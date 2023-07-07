@@ -5,7 +5,6 @@ import HomePricing from "../components/HomePricing";
 import Feature from "../components/Feature";
 import Devicedetails from "../components/Devicedetails";
 import Footer from "../components/Footer";
-import Link from "react-scroll";
 
 function Home() {
 	return (
