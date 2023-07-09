@@ -1,5 +1,6 @@
-import { CheckIcon } from "@heroicons/react/20/solid";
+import { useState } from "react";
 import { Element } from "react-scroll";
+import Preordermodal from "./Preordermodal";
 
 const includedFeatures = [
 	"24/7 Support",
@@ -9,6 +10,7 @@ const includedFeatures = [
 ];
 
 export default function HomePricing() {
+	const [openModal, setOpenModal] = useState(false);
 	return (
 		<Element name="Pricing">
 			<div className="bg-white py-24 sm:py-32 h-screen">
@@ -45,12 +47,20 @@ export default function HomePricing() {
 									<p className="text-base font-semibold text-gray-600">
 										Pay once, own it forever
 									</p>
-									<a
+									<button
+										onClick={() => {
+											setOpenModal(true);
+										}}
 										href="#"
 										className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 									>
 										Pre-Book
-									</a>
+									</button>
+									{openModal && (
+										<Preordermodal
+											closeModal={setOpenModal}
+										/>
+									)}
 									<p className="mt-6 text-xs leading-5 text-gray-600">
 										We'll email you your order confirmation.
 									</p>

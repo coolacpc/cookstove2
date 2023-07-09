@@ -40,26 +40,25 @@ function About() {
 									About Us
 								</h1>
 							</div>
-							<p class="mb-6 text-base leading-7 text-gray-500 dark:text-gray-400">
-								At Data Works, we are passionate about
-								revolutionizing the way you manage your stoves
-								and grills. With our cutting-edge stove manager
-								device, we aim to bring convenience and
-								efficiency to your cooking experience. Our team
-								of experts has dedicated countless hours to
-								crafting a device that seamlessly integrates
-								with your kitchen appliances, providing you with
-								precise control and monitoring capabilities.
-								Whether you're a professional chef or a cooking
-								enthusiast, our device offers a range of
-								innovative features to elevate your culinary
-								adventures. Join us on this journey as we
-								redefine the art of cooking and bring a new
-								level of mastery to your kitchen.
+							<p class="mb-6 text-base leading-7 text-black dark:text-black">
+								• Namooos is a business entity based in Dubai,
+								United Arab Emirates, delivering services for
+								B2B customers. The company developed the Stove
+								Data Works (SDW) – an integrated hardware and
+								software solution providing usage data and
+								insights for operational, investments and policy
+								decision-making.
+							</p>
+							<p class="mb-6 text-base leading-7 text-black dark:text-black">
+								• Our team combines competencies in business and
+								investments, clean cooking and renewable energy,
+								data science, IoT and web development together
+								to create a holistic experience for our target
+								customers.{" "}
 							</p>
 							<a
 								href="#"
-								class="px-4 py-2 text-gray-100 bg-blue-500 rounded dark:bg-blue-400 dark:hover:bg-blue-500 hover:bg-blue-600"
+								class="px-4 py-2 text-white bg-blue-500 rounded dark:bg-blue-400 dark:hover:bg-blue-500 hover:bg-blue-600"
 							>
 								Contact us
 							</a>
