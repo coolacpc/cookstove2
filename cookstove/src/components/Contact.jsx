@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 // import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
+import emailjs from "@emailjs/browser";
 import { Element } from "react-scroll";
 
 function classNames(...classes) {
@@ -9,6 +10,65 @@ function classNames(...classes) {
 
 export default function Contact() {
 	const [agreed, setAgreed] = useState(false);
+	const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+	const form = useRef();
+	const progressInterval = useRef(null);
+	const progressRef = useRef(null);
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				"service_5x619f8",
+				"template_gry84l9",
+				form.current,
+				"_mgGmL807KOPlv1M7"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					setShowSuccessAlert(true);
+				},
+				(error) => {
+					<div
+						class="mb-4 rounded-lg bg-danger-100 px-6 py-5 text-base text-danger-700"
+						role="alert"
+					>
+						A problem has occured. Please Try again later!
+					</div>;
+				}
+			);
+	};
+
+	useEffect(() => {
+		if (showSuccessAlert) {
+			let progress = 100;
+
+			progressInterval.current = setInterval(() => {
+				if (progressRef.current) {
+					if (progress > 0) {
+						progress -= 1;
+						progressRef.current.style.width = `${progress}%`;
+					}
+				}
+			}, 100);
+
+			setTimeout(() => {
+				clearInterval(progressInterval.current);
+				setShowSuccessAlert(false);
+			}, 10000); // Close the alert after 10 seconds
+		} else {
+			// Reset the progress bar when the alert is not shown
+			if (progressRef.current) {
+				progressRef.current.style.width = "100%";
+			}
+		}
+
+		return () => {
+			clearInterval(progressInterval.current);
+		};
+	}, [showSuccessAlert]);
 
 	return (
 		<Element name="Contact">
@@ -35,8 +95,8 @@ export default function Contact() {
 					</p>
 				</div>
 				<form
-					action="#"
-					method="POST"
+					ref={form}
+					onSubmit={sendEmail}
 					className="mx-auto mt-16 max-w-xl sm:mt-20"
 				>
 					<div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -49,8 +109,9 @@ export default function Contact() {
 							</label>
 							<div className="mt-2.5">
 								<input
+									required
 									type="text"
-									name="first-name"
+									name="user_first"
 									id="first-name"
 									autoComplete="given-name"
 									className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -66,8 +127,9 @@ export default function Contact() {
 							</label>
 							<div className="mt-2.5">
 								<input
+									required
 									type="text"
-									name="last-name"
+									name="user_last"
 									id="last-name"
 									autoComplete="family-name"
 									className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -83,6 +145,7 @@ export default function Contact() {
 							</label>
 							<div className="mt-2.5">
 								<input
+									required
 									type="text"
 									name="company"
 									id="company"
@@ -100,8 +163,9 @@ export default function Contact() {
 							</label>
 							<div className="mt-2.5">
 								<input
+									required
 									type="email"
-									name="email"
+									name="user_email"
 									id="email"
 									autoComplete="email"
 									className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -136,8 +200,9 @@ export default function Contact() {
 								/> */}
 								</div>
 								<input
+									required
 									type="tel"
-									name="phone-number"
+									name="phone_number"
 									id="phone-number"
 									autoComplete="tel"
 									className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -153,7 +218,8 @@ export default function Contact() {
 							</label>
 							<div className="mt-2.5">
 								<textarea
-									name="message"
+									required
+									name="user_message"
 									id="message"
 									rows={4}
 									className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -209,6 +275,44 @@ export default function Contact() {
 						>
 							Let's talk
 						</button>
+					</div>
+					<div
+						className={`mt-4 ${
+							showSuccessAlert ? "block" : "hidden"
+						}`}
+					>
+						<div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+							<span className="block sm:inline">
+								Your message has been sent successfully!
+							</span>
+							<div className="w-full h-2 bg-green-200 rounded mt-2 transition-width duration-200">
+								<div
+									ref={progressRef}
+									className="h-full bg-green-500 rounded"
+									style={{
+										width: "0%",
+									}}
+								></div>
+							</div>
+							<span
+								className="absolute top-0 bottom-0 right-0 px-4 py-3"
+								onClick={() => setShowSuccessAlert(false)}
+							>
+								{/* <svg
+									className="fill-current h-6 w-6 text-green-500"
+									role="button"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+								>
+									<title>Close</title>
+									<path
+										fillRule="evenodd"
+										d="M14.348 5.652c.586-.586.586-1.536 0-2.122-.585-.586-1.536-.586-2.121 0L10 7.878 7.774 5.652c-.586-.586-1.536-.586-2.121 0-.586.586-.586 1.536 0 2.122L7.879 10l-2.226 2.226c-.586.586-.586 1.536 0 2.122.293.293.677.439 1.06.439s.767-.146 1.06-.44L10 12.122l2.226 2.226c.293.293.677.44 1.06.44s.767-.146 1.06-.44c.586-.586.586-1.536 0-2.122L12.121 10l2.227-2.226z"
+										clipRule="evenodd"
+									/>
+								</svg> */}
+							</span>
+						</div>
 					</div>
 				</form>
 			</div>

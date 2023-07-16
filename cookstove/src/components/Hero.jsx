@@ -78,7 +78,7 @@ export default function Hero() {
 							to="Contact"
 							spy={true}
 							smooth={true}
-							offset={80}
+							offset={90}
 							duration={500}
 						>
 							Contact us

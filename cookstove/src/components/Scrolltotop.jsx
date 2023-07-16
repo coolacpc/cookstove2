@@ -5,7 +5,7 @@ const Scrolltotop = () => {
 	const [isVisible, setIsVisible] = useState(false);
 
 	const toggleVisibility = () => {
-		if (window.pageYOffset > 300) {
+		if (window.pageYOffset > 250) {
 			setIsVisible(true);
 		} else {
 			setIsVisible(false);
@@ -30,10 +30,10 @@ const Scrolltotop = () => {
 		<button
 			className={`${
 				isVisible ? "fixed bottom-5 right-5" : "hidden"
-			} bg-blue-500 text-white p-2 rounded-full focus:outline-none z-50`}
+			} bg-indigo-600 text-white p-2 rounded-full focus:outline-none z-50`}
 			onClick={scrollToTop}
 		>
-			<ArrowUpCircleIcon className="h-6 w-6" />
+			<ArrowUpCircleIcon className="h-7 w-7" />
 		</button>
 	);
 };
