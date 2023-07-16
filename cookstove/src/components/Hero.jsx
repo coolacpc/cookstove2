@@ -73,6 +73,16 @@ export default function Hero() {
 						>
 							Products
 						</Link>
+						<Link
+							className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+							to="Contact"
+							spy={true}
+							smooth={true}
+							offset={80}
+							duration={500}
+						>
+							Contact us
+						</Link>
 					</div>
 				</nav>
 
