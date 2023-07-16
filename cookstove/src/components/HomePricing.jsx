@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Element } from "react-scroll";
 import Preordermodal from "./Preordermodal";
 
-const includedFeatures = [
-	"24/7 Support",
-	"How To Use Training",
-	"1-Time Installation",
-	"Effortless Temperature Control",
-];
+// const includedFeatures = [
+// 	"24/7 Support",
+// 	"How To Use Training",
+// 	"1-Time Installation",
+// 	"Effortless Temperature Control",
+// ];
 
 export default function HomePricing() {
 	const [openModal, setOpenModal] = useState(false);

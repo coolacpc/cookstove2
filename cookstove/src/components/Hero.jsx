@@ -2,8 +2,8 @@ import Logo from "../assets/Logo.jpg";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import * as Scroll from "react-scroll";
-import { Link, Element } from "react-scroll";
+// import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 
 // const navigation = [
 // 	{ name: "Home", href: "/cookstove2" },
@@ -125,6 +125,48 @@ export default function Hero() {
 											{item.name}
 										</a>
 									))} */}
+									<div className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+										<Link
+											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+											to="Devicedetails"
+											spy={true}
+											smooth={true}
+											offset={10}
+											duration={500}
+										>
+											Features
+										</Link>
+										<Link
+											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+											to="Aboutus"
+											spy={true}
+											smooth={true}
+											offset={10}
+											duration={500}
+										>
+											About us
+										</Link>{" "}
+										<Link
+											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+											to="Pricing"
+											spy={true}
+											smooth={true}
+											offset={10}
+											duration={500}
+										>
+											Products
+										</Link>
+										<Link
+											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+											to="Contact"
+											spy={true}
+											smooth={true}
+											offset={80}
+											duration={500}
+										>
+											Contact us
+										</Link>
+									</div>
 								</div>
 							</div>
 						</div>
