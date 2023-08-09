@@ -218,13 +218,17 @@ export default function Hero() {
 							>
 								Pre-Book
 							</Link>
-							<a
-								href="#"
-								className="text-sm font-semibold leading-6 text-gray-900"
+							<Link
+								className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+								to="Devicedetails"
+								spy={true}
+								smooth={true}
+								offset={90}
+								duration={500}
 							>
 								Learn how it works{" "}
 								<span aria-hidden="true">→</span>
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

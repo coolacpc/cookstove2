@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import iot from "../assets/iot.jpg";
+import { Link } from "react-scroll";
 
 function About() {
 	return (
@@ -56,12 +57,16 @@ function About() {
 								to create a holistic experience for our target
 								customers.{" "}
 							</p>
-							<a
-								href="#"
+							<Link
 								class="px-4 py-2 text-white bg-blue-500 rounded dark:bg-blue-400 dark:hover:bg-blue-500 hover:bg-blue-600"
+								to="Contact"
+								spy={true}
+								smooth={true}
+								offset={90}
+								duration={500}
 							>
 								Contact us
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>
