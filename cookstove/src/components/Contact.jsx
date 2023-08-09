@@ -90,8 +90,8 @@ export default function Contact() {
 						Contact sales
 					</h2>
 					<p className="mt-2 text-lg leading-8 text-gray-600">
-						Aute magna irure deserunt veniam aliqua magna enim
-						voluptate.
+						Be the Pioneer in your neighborhood. Pre-book your
+						device now!
 					</p>
 				</div>
 				<form
