@@ -23,7 +23,7 @@ export default function Contact() {
 				"service_vbpgkwc",
 				"template_i00ff22",
 				form.current,
-				"_mgGmL807KOPlv1M7"
+				"EG_OE1LYXKvTTUsDM"
 			)
 			.then(
 				(result) => {
@@ -283,7 +283,7 @@ export default function Contact() {
 					>
 						<div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
 							<span className="block sm:inline">
-								Your message has been sent successfully!
+								Your message has been sent successfully.
 							</span>
 							<div className="w-full h-2 bg-green-200 rounded mt-2 transition-width duration-200">
 								<div
