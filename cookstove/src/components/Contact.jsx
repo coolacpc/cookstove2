@@ -256,7 +256,7 @@ export default function Contact() {
 									/>
 								</Switch>
 							</div>
-							<Switch.Label className="text-sm leading-6 text-gray-600">
+							<Switch.Label className="text-sm leading-6 text-gray-600 required">
 								By selecting this, you agree to our{" "}
 								<a
 									href="#"
@@ -271,10 +271,33 @@ export default function Contact() {
 					<div className="mt-10">
 						<button
 							type="submit"
-							className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							className={`block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ${
+								agreed ? "" : "opacity-50 cursor-not-allowed"
+							}`}
+							disabled={!agreed}
+							onClick={() => {
+								if (!agreed) {
+									const message =
+										document.getElementById(
+											"agreement-message"
+										);
+									if (message) {
+										message.style.visibility = "visible";
+									}
+								}
+							}}
 						>
 							Let's talk
 						</button>
+						<p
+							id="agreement-message"
+							className="mt-2 text-sm text-red-500"
+							style={{
+								visibility: agreed ? "hidden" : "visible",
+							}}
+						>
+							Please agree to the policies before continuing.
+						</p>
 					</div>
 					<div
 						className={`mt-4 ${

@@ -125,47 +125,55 @@ export default function Hero() {
 											{item.name}
 										</a>
 									))} */}
-									<div className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-										<Link
-											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
-											to="Devicedetails"
-											spy={true}
-											smooth={true}
-											offset={10}
-											duration={500}
-										>
-											Features
-										</Link>
-										<Link
-											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
-											to="Aboutus"
-											spy={true}
-											smooth={true}
-											offset={10}
-											duration={500}
-										>
-											About us
-										</Link>{" "}
-										<Link
-											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
-											to="Pricing"
-											spy={true}
-											smooth={true}
-											offset={10}
-											duration={500}
-										>
-											Products
-										</Link>
-										<Link
-											className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
-											to="Contact"
-											spy={true}
-											smooth={true}
-											offset={80}
-											duration={500}
-										>
-											Contact us
-										</Link>
+									<div className="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900">
+										<div className="mb-6">
+											<Link
+												className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+												to="Devicedetails"
+												spy={true}
+												smooth={true}
+												offset={10}
+												duration={500}
+											>
+												Features
+											</Link>
+										</div>
+										<div className="mb-6">
+											<Link
+												className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+												to="Aboutus"
+												spy={true}
+												smooth={true}
+												offset={10}
+												duration={500}
+											>
+												About us
+											</Link>
+										</div>
+										<div className="mb-6">
+											<Link
+												className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+												to="Pricing"
+												spy={true}
+												smooth={true}
+												offset={10}
+												duration={500}
+											>
+												Products
+											</Link>
+										</div>
+										<div>
+											<Link
+												className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+												to="Contact"
+												spy={true}
+												smooth={true}
+												offset={80}
+												duration={500}
+											>
+												Contact us
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>

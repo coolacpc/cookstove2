@@ -1,42 +1,144 @@
 import React from "react";
-import { Stepper, Step, Button } from "@material-tailwind/react";
-import { HomeIcon, CogIcon, UserIcon } from "@heroicons/react/24/outline";
 
 export default function StepperWithIcon() {
-	const [activeStep, setActiveStep] = React.useState(0);
-	const [isLastStep, setIsLastStep] = React.useState(false);
-	const [isFirstStep, setIsFirstStep] = React.useState(false);
-
-	const handleNext = () => !isLastStep && setActiveStep((cur) => cur + 1);
-	const handlePrev = () => !isFirstStep && setActiveStep((cur) => cur - 1);
-
 	return (
-		<div className="w-full py-4 px-8">
-			<Stepper
-				activeStep={activeStep}
-				isLastStep={(value) => setIsLastStep(value)}
-				isFirstStep={(value) => setIsFirstStep(value)}
-			>
-				<Step onClick={() => setActiveStep(0)}>
-					<HomeIcon className="h-5 w-5" />
-				</Step>
-				<Step onClick={() => setActiveStep(1)}>
-					<UserIcon className="h-5 w-5" />
-				</Step>
-				<Step onClick={() => setActiveStep(2)}>
-					<CogIcon className="h-5 w-5" />
-				</Step>
-			</Stepper>
-			<div>
-				<input type="button" value="send" />
-			</div>
-			<div className="mt-16 flex justify-between">
-				<Button onClick={handlePrev} disabled={isFirstStep}>
-					Prev
-				</Button>
-				<Button onClick={handleNext} disabled={isLastStep}>
-					Next
-				</Button>
+		<div class="flex justify-center items-center h-screen">
+			<div class="leading-loose">
+				<form class="max-w-xl m-4 p-10 bg-white rounded shadow-xl">
+					<p class="text-gray-800 font-medium">
+						Customer information
+					</p>
+					<div class="">
+						<label
+							class="block text-sm text-gray-00"
+							for="cus_name"
+						>
+							Name
+						</label>
+						<input
+							class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded"
+							id="cus_name"
+							name="cus_name"
+							type="text"
+							required=""
+							placeholder="Your Name"
+							aria-label="Name"
+						/>
+					</div>
+					<div class="mt-2">
+						<label
+							class="block text-sm text-gray-600"
+							for="cus_email"
+						>
+							Email
+						</label>
+						<input
+							class="w-full px-5  py-4 text-gray-700 bg-gray-200 rounded"
+							id="cus_email"
+							name="cus_email"
+							type="text"
+							required=""
+							placeholder="Your Email"
+							aria-label="Email"
+						/>
+					</div>
+					<div class="mt-2">
+						<label
+							class=" block text-sm text-gray-600"
+							for="cus_email"
+						>
+							Address
+						</label>
+						<input
+							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
+							id="cus_email"
+							name="cus_email"
+							type="text"
+							required=""
+							placeholder="Street"
+							aria-label="Email"
+						/>
+					</div>
+					<div class="mt-2">
+						<label
+							class="hidden text-sm block text-gray-600"
+							for="cus_email"
+						>
+							City
+						</label>
+						<input
+							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
+							id="cus_email"
+							name="cus_email"
+							type="text"
+							required=""
+							placeholder="City"
+							aria-label="Email"
+						/>
+					</div>
+					<div class="inline-block mt-2 w-1/2 pr-1">
+						<label
+							class="hidden block text-sm text-gray-600"
+							for="cus_email"
+						>
+							Country
+						</label>
+						<input
+							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
+							id="cus_email"
+							name="cus_email"
+							type="text"
+							required=""
+							placeholder="Country"
+							aria-label="Email"
+						/>
+					</div>
+					<div class="inline-block mt-2 -mx-1 pl-1 w-1/2">
+						<label
+							class="hidden block text-sm text-gray-600"
+							for="cus_email"
+						>
+							Zip
+						</label>
+						<input
+							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
+							id="cus_email"
+							name="cus_email"
+							type="text"
+							required=""
+							placeholder="Zip"
+							aria-label="Email"
+						/>
+					</div>
+					{/* <p class="mt-4 text-gray-800 font-medium">
+						Payment information
+					</p> */}
+					{/* <div class="">
+						<label
+							class="block text-sm text-gray-600"
+							for="cus_name"
+						>
+							Card
+						</label>
+						<input
+							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
+							id="cus_name"
+							name="cus_name"
+							type="text"
+							required=""
+							placeholder="Card Number MM/YY CVC"
+							aria-label="Name"
+						/>
+					</div> */}
+					<div class="mt-4">
+						<button
+							class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"
+							type="submit"
+						>
+							Pre-Order
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	);
